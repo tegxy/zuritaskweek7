@@ -1,0 +1,78 @@
+/*CSS RESET BELOW HERE  */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	margin: 0;
+}
+
+img,
+picture {
+	width: 100%;
+	height: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*CSS RESET ABOVE HERE  */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel {
+	max-width: 600px;
+	position: relative;
+}
+
+.container {
+	width: 600px;
+	height: 550px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 600px;
+}
+
+.btn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+i {
+	position: absolute;
+	background-color: rgb(143, 172, 173);
+	color: rgb(255, 255, 255);
+	border-radius: 50%;
+	padding: 10px;
+	opacity: 0;
+}
+
+.carousel:hover i {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#prev-btn {
+	top: 50%;
+}
+
+#next-btn {
+	top: 50%;
+	right: 0;
+}
