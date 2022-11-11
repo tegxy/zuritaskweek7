@@ -26,8 +26,16 @@ body {
 }
 
 .carousel {
-	max-width: 600px;
+	width: 600px;
 	position: relative;
+}
+
+@media (max-width: 500px) {
+	.carousel {
+		width: 90%;
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .container {
@@ -39,11 +47,25 @@ body {
 	position: relative;
 }
 
+@media (max-width: 500px) {
+	.container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
 img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 600px;
+}
+
+@media (max-width: 500px) {
+	img {
+		width: 100%;
+	}
 }
 
 .btn {
